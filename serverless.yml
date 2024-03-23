@@ -1,0 +1,24 @@
+# serverless.yml
+service: my-graphql-lambda
+provider:
+  name: aws
+  runtime: nodejs16.x
+functions:
+  queryHandler:
+    handler: handler.queryHandler
+    events:
+      - http:
+          path: query
+          method: post
+  mutationHandler:
+    handler: handler.mutationHandler
+    events:
+      - http:
+          path: mutation
+          method: post
+  subscriptionHandler:
+    handler: handler.subscriptionHandler
+    events:
+      - http:
+          path: subscription
+          method: post
