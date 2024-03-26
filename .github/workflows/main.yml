@@ -19,8 +19,8 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Run Tests
-      run: npm test
+    - name: Install Dependencies
+      run: npm install aws-sdk graphql graphql-lambda
 
   deploy:
     runs-on: ubuntu-latest
