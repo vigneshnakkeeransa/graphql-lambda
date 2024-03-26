@@ -1,5 +1,5 @@
 {
-  "name": "my-graphql-lambda",
+  "name": "graphql-lambda",
   "version": "1.0.0",
   "description": "",
   "main": "handler.js",
@@ -12,6 +12,7 @@
   "dependencies": {
     "aws-sdk": "^2.1584.0",
     "graphql": "^16.8.1",
-    "graphql-lambda": "^1.1.0"
+    "graphql-lambda": "^",
+    "graphql-server-lambda": "^<version>"
   }
 }
