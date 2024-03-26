@@ -1,8 +1,8 @@
 # serverless.yml
-service: my-graphql-lambda
+service: graphql-lambda
 provider:
   name: aws
-  runtime: nodejs16.x
+  runtime: nodejs18.x
 functions:
   queryHandler:
     handler: handler.queryHandler
